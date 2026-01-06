@@ -11,6 +11,9 @@ Runs as python mash-to-clusters.py mash-dist-table.tab <cluster-mash-dist> outpu
 
 **CorrelDefenceMetabol.py**: run as python CorrelDefenceMetabol.py <genome-defence-file> <processed-scorecard-from-process-metabolic-scorecard>
 
+**PADLOC-DefFinder-combine.py** :Combines PADLOC and Defensefinder outputs. 
+Run as python PADLOC-DefFinder-combine.py PADLOC.tsv DEFENSEFINDER.TSV OUTPUTFILE.tsv
+
 
 
 In the plots folder:
