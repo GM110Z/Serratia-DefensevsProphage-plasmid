@@ -1,3 +1,5 @@
+import pandas as pd
+
 # Load the 820-row scorecard
 df = pd.read_csv('metabolic_scorecard.tsv', sep='\t', index_col=0)
 
