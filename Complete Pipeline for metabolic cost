@@ -1,0 +1,7 @@
+1. Download nucleotide fasta files with ncbi-datasets.sh and analyse with mash dist (all vs all)
+2. Use mash-to-clusters.py to group them
+3. Use deruplicated dataset to download .faa file
+4. Run koFamScan.sh
+5. Then process file with sed 's/_/./g' master_kegg_list.tsv > master_kegg_list_fixed.tsv 
+6. Produce a metabolic score card, per genome with:  KEGG-decoder -i master_kegg_list.tsv -o metabolic_scorecard.tsv --viz serratia_metabolism.svg . KEGG-decoder can be found :https://github.com/bjtully/BioData/blob/master/KEGGDecoder/README.md
+
