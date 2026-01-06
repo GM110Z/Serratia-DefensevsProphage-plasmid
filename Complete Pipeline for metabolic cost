@@ -4,4 +4,4 @@
 4. Run koFamScan.sh
 5. Then process file with sed 's/_/./g' master_kegg_list.tsv > master_kegg_list_fixed.tsv 
 6. Produce a metabolic score card, per genome with:  KEGG-decoder -i master_kegg_list.tsv -o metabolic_scorecard.tsv --viz serratia_metabolism.svg . KEGG-decoder can be found :https://github.com/bjtully/BioData/blob/master/KEGGDecoder/README.md
-
+7.Run process-metabolic-scorecard.py
