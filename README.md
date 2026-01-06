@@ -9,7 +9,7 @@ Runs as python mash-to-clusters.py mash-dist-table.tab <cluster-mash-dist> outpu
 
 **process-metabolic-scorecard.py**: Python script to process KEGG-decoder analysis scorecard and drop all columns that have "0", retaining only metabolic pathways that have a value >0  in at least one row of the scorecard
 
-**CorrelDefenceMetabol.py**: run as python CorrelDefenceMetabol.py <genome-defence-file> <processed-scorecard-from-process-metabolic-scorecard>
+**CorrelDefenceMetabol.py**: run as python CorrelDefenceMetabol.py genome-defence-file processed-scorecard-from-process-metabolic-scorecard.tsv
 
 **PADLOC-DefFinder-combine.py** :Combines PADLOC and Defensefinder outputs. 
 Run as python PADLOC-DefFinder-combine.py PADLOC.tsv DEFENSEFINDER.TSV OUTPUTFILE.tsv
