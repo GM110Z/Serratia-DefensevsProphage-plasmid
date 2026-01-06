@@ -5,3 +5,10 @@
 5. Then process file with sed 's/_/./g' master_kegg_list.tsv > master_kegg_list_fixed.tsv 
 6. Produce a metabolic score card, per genome with:  KEGG-decoder -i master_kegg_list.tsv -o metabolic_scorecard.tsv --viz serratia_metabolism.svg . KEGG-decoder can be found :https://github.com/bjtully/BioData/blob/master/KEGGDecoder/README.md
 7.Run process-metabolic-scorecard.py
+8. Run PADLOC and defensefinder as in :https://github.com/GM110Z/PAPI-islands-analysis/tree/main
+9. Combine the outputs with PADLOC-DefFinder-combine.py
+10. The combo file produced will need a bit of manual curation to :
+  a) align all the Nuccore IDs from both programs in the ssame column
+  b) for Defensefinder output, you will need to do text-to-columns to remove the name of the system that has been fused to the nuccore ID. Suggested to use "." as the separator and remove everything after .1 for every nuccore id. 
+11)Now you can run nuccore-to-assembly.py
+12)Then run CorrelDefenceMetabol.py
