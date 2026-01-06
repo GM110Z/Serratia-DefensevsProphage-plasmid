@@ -14,7 +14,7 @@ Runs as python mash-to-clusters.py mash-dist-table.tab <cluster-mash-dist> outpu
 **PADLOC-DefFinder-combine.py** :Combines PADLOC and Defensefinder outputs. 
 Run as python PADLOC-DefFinder-combine.py PADLOC.tsv DEFENSEFINDER.TSV OUTPUTFILE.tsv
 
-
+**nuccore-to-assembly.py**: Runs as python nuccore-to-assembly.py padloc-defense-combined.xlsx OutputfileName.xlsx
 
 In the plots folder:
 MetabolvsDefence.py: takes the tables produced by CorrelDefenceMetabol.py to produce plots.
