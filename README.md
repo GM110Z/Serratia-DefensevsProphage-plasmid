@@ -18,3 +18,8 @@ Run as python PADLOC-DefFinder-combine.py PADLOC.tsv DEFENSEFINDER.TSV OUTPUTFIL
 
 In the plots folder:
 MetabolvsDefence.py: takes the tables produced by CorrelDefenceMetabol.py to produce plots.
+
+**defense-matrix-gen.py**: Runs as defense-matrix-gen.py defense-padloc-file.tsv metabolic-scorecard.tsv
+It creates a presence absence matrix of both pathways based on GCF_Xxx ids
+
+**calculate-epistasis.py** :This script uses co-occurrence analysis and linear regression modelling to identify where defense systems are either statistically excluded or metabolically incompatible. Takes the output of **defense-matrix-gen.py** directly 
