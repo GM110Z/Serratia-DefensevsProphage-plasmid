@@ -23,3 +23,5 @@ MetabolvsDefence.py: takes the tables produced by CorrelDefenceMetabol.py to pro
 It creates a presence absence matrix of both pathways based on GCF_Xxx ids
 
 **calculate-epistasis.py** :This script uses co-occurrence analysis and linear regression modelling to identify where defense systems are either statistically excluded or metabolically incompatible. Takes the output of **defense-matrix-gen.py** directly 
+
+**PositiveDefensePairs-Metabolism-Association.py**:This script uses co-occurrence analysis and linear regression modelling to identify where defense systems are positively associated with metabolic pathways
